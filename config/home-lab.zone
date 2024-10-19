@@ -1,0 +1,19 @@
+$TTL 2d
+
+$ORIGIN home.lab.
+
+@				IN		SOA		ns.home.lab. stanislawhorna@outlook.com (
+								2024101900  ; serial
+								12h         ; refresh
+								15m         ; retry
+								3w			; expire
+								2h			; minimum ttl
+								)
+				IN		NS		ns.home.lab.
+
+ns				IN		A		10.0.10.111
+
+; -- add dns records below
+
+services		IN		A		10.0.10.101
+apps			IN		A		10.0.10.102
